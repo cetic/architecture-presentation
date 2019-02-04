@@ -6,13 +6,14 @@ stages:
 variables:
   OPENSHIFT_SERVER: https://openshift.ext.cetic.be:8443
   OPENSHIFT_DOMAIN: openshift.ext.cetic.be
+  PROJECT_NAME: architecture-slides
   # Configure this variable in Secure Variables:
   # OPENSHIFT_TOKEN: my.openshift.token
 
 .deploy: &deploy
   before_script:
     - oc login "$OPENSHIFT_SERVER" --token="$OPENSHIFT_TOKEN" --insecure-skip-tls-verify
-    - oc project "architecture-slides"
+    - oc project "$PROJECT_NAME"
   script:
     - "oc get services $APP 2> /dev/null || oc new-app openshift/nodejs:6~. --name=$APP"
     - "oc start-build $APP --from-dir=. --follow || sleep 3s"
@@ -24,12 +25,11 @@ prod:
   tags:
     - docker
   variables:
-    APP: architecture-slides
+    APP: $PROJECT_NAME
     # this is your app domain name exposed by OpenShift (usually myapp.openshift.ext.cetic.be)
-    APP_HOST: architecture-slides.$OPENSHIFT_DOMAIN
+    APP_HOST: $PROJECT_NAME.$OPENSHIFT_DOMAIN
   environment:
     name: prod
-    url: http://architecture-slides.$OPENSHIFT_DOMAIN
+    url: http://$PROJECT_NAME.$OPENSHIFT_DOMAIN
   only:
     - master
-
