@@ -369,64 +369,6 @@
 				]
 			});
 		</script>
-
-		<script type="text/javascript">
-            TESTER = document.getElementById('plotly_test1');
-            data = [
-                {
-					type: 'scatterpolar',
-					r: [39, 28, 8, 7, 58, 98],
-					theta: ['Integration','Distributed','Multi-tenancy', 'HCI', 'API', 'Workflow tools', 'Licensing and documentation', 'Exploitation'],
-					fill: 'toself',
-					name: 'Apache Beam'
-            	},
-                {
-                    type: 'scatterpolar',
-                    r: [56, 10, 22, 88, 78, 12],
-                    theta: ['Integration','Distributed','Multi-tenancy', 'HCI', 'API', 'Workflow tools', 'Licensing and documentation', 'Exploitation'],
-                    fill: 'toself',
-                    name: 'Streampipes'
-                }
-            ];
-
-            layout = {
-                polar: {
-                    radialaxis: {
-                        visible: true,
-                        range: [0, 100]
-                    }
-                },
-                showlegend: true
-            };
-            Plotly.plot(TESTER, data, layout);
-
-            TESTER2 = document.getElementById('plotly_test2');
-            data2 = [
-                {
-                    type: 'bar',
-                    y: [39, 28, 8, 7, 58, 98],
-                    x: ['Integration','Distributed','Multi-tenancy', 'HCI', 'API', 'Workflow tools', 'Licensing and documentation', 'Exploitation'],
-                    fill: 'toself',
-                    name: 'Apache Beam'
-                },
-                {
-                    type: 'bar',
-                    y: [56, 10, 22, 88, 78, 12],
-                    x: ['Integration','Distributed','Multi-tenancy', 'HCI', 'API', 'Workflow tools', 'Licensing and documentation', 'Exploitation'],
-                    fill: 'toself',
-                    name: 'Streampipes'
-                }
-            ];
-
-            layout2 = {
-                title : "Data processing comparison",
-                barmode: 'group',
-                bargap: 0.15,
-                bargroupgap: 0.1
-            };
-            Plotly.plot(TESTER2, data2, layout2);
-
-		</script>
 			</div>
 		</div>
 	</body>
