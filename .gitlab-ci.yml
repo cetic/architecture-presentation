@@ -29,7 +29,7 @@ prod:
     # this is your app domain name exposed by OpenShift (usually myapp.openshift.ext.cetic.be)
     APP_HOST: $PROJECT_NAME.$OPENSHIFT_DOMAIN
   environment:
-    name: prod
+    name: master
     url: http://$PROJECT_NAME.$OPENSHIFT_DOMAIN
   only:
     - master
