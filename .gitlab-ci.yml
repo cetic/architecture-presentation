@@ -15,7 +15,7 @@ variables:
     - oc project "architecture-slides"
   script:
     - "oc get services $APP 2> /dev/null || oc new-app openshift/nodejs:6~. --name=$APP"
-    - "oc start-build $APP --from-dir=. --follow --v=3 --stderrthreshold=0|| sleep 3s"
+    - "oc start-build $APP --from-dir=. --follow || sleep 3s"
     - "oc get routes $APP 2> /dev/null || oc expose service $APP --hostname=$APP_HOST"
 
 prod:
@@ -28,7 +28,7 @@ prod:
     # this is your app domain name exposed by OpenShift (usually myapp.openshift.ext.cetic.be)
     APP_HOST: architecture-slides.$OPENSHIFT_DOMAIN
   environment:
-    name: master
+    name: prod
     url: http://architecture-slides.$OPENSHIFT_DOMAIN
   only:
     - master

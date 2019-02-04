@@ -17,5 +17,4 @@ See OpenShift usage documentation for deployment instructions: https://git.cetic
 
 ### Authors
 
-* **Alexandre Nuttinck** : alexandre.nuttinck@cetic.be
-* **Sebastien Dupont** : sebastien.dupont@cetic.be
+* **Rami Sellami** : rami.sellami@cetic.be
