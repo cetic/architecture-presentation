@@ -5,19 +5,18 @@
     "js/reveal.js",
     "css/reveal.css"
   ],
-  "description": "Openshift Presentation",
-  "homepage": "http://demo-slides.openshift.ext.cetic.be",
+  "homepage": "http://lab.hakim.se/reveal-js/",
   "license": "MIT",
-  "author": {
-    "name": "Alexandre Nuttinck",
-    "email": "alexandre.nuttinck@cetic.be"
-  },
+  "description": "The HTML Presentation Framework",
+  "authors": [
+    "Hakim El Hattab <hakim.elhattab@gmail.com>"
+  ],
   "dependencies": {
     "headjs": "~1.0.3"
   },
   "repository": {
     "type": "git",
-    "url": "https://git.cetic.be/OpenShift/slides.git"
+    "url": "git://github.com/hakimel/reveal.js.git"
   },
   "ignore": [
     "**/.*",
