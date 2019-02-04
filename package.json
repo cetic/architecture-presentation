@@ -1,8 +1,8 @@
 {
-  "name": "architecture-slides",
+  "name": "slides-openshift",
   "version": "0.0.4",
-  "description": "Architecture Presentation",
-  "homepage": "http://architecture-slides.openshift.ext.cetic.be",
+  "description": "Openshift Presentation",
+  "homepage": "http://demo-slides.openshift.ext.cetic.be",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
   "scripts": {
@@ -11,12 +11,12 @@
     "build": "grunt"
   },
   "author": {
-    "name": "Rami Sellami",
-    "email": "rami.sellami@cetic.be"
+    "name": "Alexandre Nuttinck",
+    "email": "alexandre.nuttinck@cetic.be"
   },
   "repository": {
     "type": "git",
-    "url": "https://git.cetic.be/SST/cloud/architecture/slides.git"
+    "url": "https://git.cetic.be/OpenShift/slides.git"
   },
   "engines": {
     "node": ">=4.0.0"
@@ -37,6 +37,7 @@
     "grunt-zip": "~0.17.1",
     "mustache": "^2.3.0",
     "socket.io": "^1.7.3"
-  },
+ },
   "license": "MIT"
 }
+
