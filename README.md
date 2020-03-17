@@ -1,20 +1,13 @@
-# Reveal.js template slides
+# Présentation de l'architcture 4+1 Vues (FR)
 
-This repository contains a template for reveal.js presentation slide.
+Ce répertoire contient la présentation de l'architecture 4+1 vues.
 
-### Usage
+Le [modèle 4+1 vues](https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf) permet de documenter une architecture logicielle en utilisant un vocabulaire commun et simple d’une manière favorable à l’utilisation de diagrammes. De plus, elle décrit l’architecture d’un même système logiciel selon 5 vues différentes d’une façon pragmatique et assez facile à comprendre pour des « non techniques ».
 
-Open index.html in your browser or deploy this on OpenShift e.g. (see `.gitlab.yml`)
-
-* presentation mode: press `s`
-* overview mode: press `escape`
-
-See OpenShift usage documentation for deployment instructions: https://git.cetic.be/OpenShift/documentation/tree/master/webconsole/#tldr
-
-### References
+### Réferences
 
 * https://github.com/hakimel/reveal.js/
 
-### Authors
+### Auteurs
 
 * **Rami Sellami** : rami.sellami@cetic.be
